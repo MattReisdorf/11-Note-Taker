@@ -49,7 +49,7 @@ app.post('/api/notes', (req, res) => {
 
     // Overwrite existing db.json
     fs.writeFile('./db/db.json', JSON.stringify(parsedDbData), err => {
-        err ? console.error(err) : console.log('Success');
+        err ? console.error(err) : console.log('Successfully Saved Note');
     });
     // Reload the page on new note creation
     res.end();
@@ -73,7 +73,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
     // Overwrite existing db.json
     fs.writeFile('./db/db.json', JSON.stringify(parsedDbData), err => {
-        err ? console.error(err) : console.log('Success');
+        err ? console.error(err) : console.log('Successfully Deleted Note');
     });
 
     res.end();
@@ -84,6 +84,8 @@ app.delete('/api/notes/:id', (req, res) => {
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, '../public/notes.html')));
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
 
+// Function for giving each note a unique id
+// If a note already has that id, the next id is checked until a unique id is found
 function verifyID(parsedData) {
     let x = parsedData.length;
     if (x === 0) {
