@@ -30,14 +30,14 @@ Feel free to fork if you want, but I won't be accepting any commits into this re
 
 ## Credits
 
-Matt Reisdorf
-Github - MReisdorf
+Matt Reisdorf:
+Github - [MattReisdorf](https://github.com/MattReisdorf)
 
-Jeremy Joanet
-Github - Vygoth
+Jeremy Joanet:
+Github - [Vygoth](https://github.com/Vygoth)
 
-Tom Siemion
-Github - 
+Tom Siemion:
+Github - [rotosti](https://github.com/rotosti)
 
 
 ## License
