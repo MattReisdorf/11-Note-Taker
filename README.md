@@ -39,6 +39,9 @@ Github - [Vygoth](https://github.com/Vygoth)
 Tom Siemion:
 Github - [rotosti](https://github.com/rotosti)
 
+Zach Duty:
+Github - [Zachduty](https://github.com/Zachduty)
+
 
 ## License
 
